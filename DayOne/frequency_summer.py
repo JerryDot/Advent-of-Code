@@ -8,3 +8,5 @@ for line in data:
 
 source_input.close()
 print(frequency)
+
+#Correct output of 497 given
