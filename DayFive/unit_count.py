@@ -30,3 +30,5 @@ while change_of_length_of_polymer > 0.1:
     change_of_length_of_polymer = before_length - after_length
 
 print(len(list_contents))
+
+#prints correct answer of 11720
