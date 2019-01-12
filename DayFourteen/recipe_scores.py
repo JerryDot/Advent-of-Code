@@ -36,7 +36,16 @@ class RecipeCalculator:
 
   def get_next_ten_answer(self):
     #self._print_next_ten_answer()
-    return ''.join(str(e) for e in self.recipes[self.input_value:(self.input_value+10)])
+    return ''.join(str(e) for e in self.recipes[self.input_value:(self.input_value+10)])#
+
+  def check_for_answer(self):
+    try:
+      for count in range(120):
+        if ''.join(str(e) for e in self.recipes[self.recipes_length - count:(self.recipes_length - count +6)]) == "846021":
+          return self.recipes_length - count
+    except:
+      "first time"
+
 
 
 
@@ -45,4 +54,15 @@ x.add_starting_conditions()
 for count in range(x.input_value+10):
   x.proceed_one_line()
 print(x.get_next_ten_answer())
-print(x.recipes[(x.input_value-2):(x.input_value+12)])
+print(x.recipes[(x.input_value-2):(x.input_value+12)]) #answer is "5482326119"
+
+y = RecipeCalculator(1)
+y.add_starting_conditions()
+while True:
+  for count in range(100):
+    y.proceed_one_line()
+  if y.check_for_answer():
+    break
+
+print(y.check_for_answer()) #answer is 20368140
+
