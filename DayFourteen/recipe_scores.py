@@ -44,7 +44,7 @@ class RecipeCalculator:
         if ''.join(str(e) for e in self.recipes[self.recipes_length - count:(self.recipes_length - count +6)]) == "846021":
           return self.recipes_length - count
     except:
-      "first time"
+      print("first time")
 
 
 
