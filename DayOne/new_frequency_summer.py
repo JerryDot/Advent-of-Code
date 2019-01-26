@@ -4,26 +4,27 @@ data = source_input.readlines()
 array_of_seen_frequencies = set([0])
 finished = False
 
-def check_frequency_novelty():
-    global frequency
+def check_frequency_novelty(frequency):
     if frequency in array_of_seen_frequencies:
-        global finished 
-        finished = True
         return True
     else:
         array_of_seen_frequencies.add(frequency)
         return False
 
-def run_through_list():
-    global frequency
+def run_through_list(frequency):
     for line in data:
         value = int(line)
         frequency += value
-        if check_frequency_novelty():
-            break
+        if check_frequency_novelty(frequency):
+            return True
+        else:
+            return frequency
 
 while not finished:
-    run_through_list()
+    if run_through_list(frequency) == True:
+        break
+    else:
+        frequency = run_through_list(frequency)
 
 source_input.close()
 print(frequency)
