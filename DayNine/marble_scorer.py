@@ -1,5 +1,5 @@
 from collections import deque, defaultdict
-
+# Commented out code below was used for question 1 which I implemented as a list rather than a deque
 no_of_players = 429
 last_marble_value = 7090100
 

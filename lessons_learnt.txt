@@ -1,2 +1,49 @@
 ===========================
+I regret folder names not being in chronological order when arranged alphabetically
+
+Day One:
+sets are much more performant than lists when applicable
+
+Day Two:
+Should be using context managers to handle file opening
+Try/except blocks
+
+Day Three:
+Basic regex (not done very cleanly at all)
+Some basic practice with using numpy arrays
+
+Day Four:
+Should be using functions to make the code more readable/understandable
+
+Day Five:
+Code runtime could be improved, function names could be clearer
+
+Day Six:
+Incomplete
+
+Day Seven:
+Relatively sensible
+
+Day Eight:
+Incomplete
+
+Day Nine:
+Deques (Python's implementation of doubly-linked lists)
+
+Day Ten:
+matplotlib.pyplot as a basic plotting tool
+
+Day Eleven:
+Likely defining too many variables
+Could be split out into some more functions
+
+Day Twelve:
+Code is not very general - it is purely for the problem at hand
+
+Day Thirteen:
+Very incomplete
+
+Day Fourteen:
+Using pytest to run unit tests on code
+
 string = ''.join(list)
